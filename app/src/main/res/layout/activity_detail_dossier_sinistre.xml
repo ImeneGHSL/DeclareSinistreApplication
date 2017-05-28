@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView
+            android:id="@+id/imageDossierSinistre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/textViewEtat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text=""
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/textViewMontant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:fontFamily="monospace"
+            android:textColor="#DC143C"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Description : "
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_margin="5dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text=""
+            android:layout_margin="5dp"
+            android:fontFamily="monospace"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Nombre Témoins : "
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewNbrTemoins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_margin="5dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Nombre Blessés : "
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewNbrBlesse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_margin="5dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Nombre Morts: "
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewNbrMorts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_margin="5dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:id="@+id/linearConducteur">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Conducteur : "
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewConducteur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:layout_margin="5dp"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:id="@+id/linearAdversaire">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Adversaire : "
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewAdversaire"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:layout_margin="5dp"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:id="@+id/linearExpert">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expert : "
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/textViewExpert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:layout_margin="5dp"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="5dp">
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/videoDossiersinistre"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

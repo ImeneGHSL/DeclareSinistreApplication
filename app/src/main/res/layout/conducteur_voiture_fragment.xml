@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="dz.esi.declaresinistreapplication.FormActivity$ConducteurVoitureFragment">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal">
+    <Switch
+        android:id="@+id/switchAut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextNomConducteur"
+        android:layout_alignLeft="@+id/editTextNomConducteur"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editTextNomConducteur"
+        android:layout_alignStart="@+id/editTextNomConducteur"
+        android:layout_gravity="center"
+        android:text="Une autre personne conduisait ma voiture"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+    </LinearLayout>
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/nameConducteur"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Nom"
+        app:isRequired="true"
+        app:dataType="String"
+        app:isEnabled="false"
+        app:idEditText="@+id/nameConducteurEditText"
+        app:idImageView="@+id/nameConducteurImageView"
+        />
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/prenomConducteur"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Prénom"
+        app:isRequired="true"
+        app:dataType="String"
+        app:isEnabled="false"
+        app:idEditText="@+id/prenomConducteurEditText"
+        app:idImageView="@+id/prenomConducteurImageView"
+        />
+
+</LinearLayout>
+

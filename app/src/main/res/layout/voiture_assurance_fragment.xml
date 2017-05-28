@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="dz.esi.declaresinistreapplication.FormActivity$VoitureAssuranceFragment">
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/matricule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Mtricule"
+        app:isRequired="true"
+        app:dataType="any"
+        app:isEnabled="false"
+        app:idEditText="@+id/matriculeEditText"
+        app:idImageView="@+id/matriculeImageView"
+        />
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/contratAssurance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*N° Contrat Assurance"
+        app:isRequired="true"
+        app:dataType="int"
+        app:isEnabled="false"
+        app:idEditText="@+id/contratAssuranceEditText"
+        app:idImageView="@+id/contratAssuranceImageView"
+        />
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/marqueVoiture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="Marque"
+        app:isRequired="false"
+        app:dataType="any"
+        app:idEditText="@+id/marqueVoitureEditText"
+        app:idImageView="@+id/marqueVoitureImageView"
+        />
+
+
+</LinearLayout>

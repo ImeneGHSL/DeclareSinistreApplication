@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="dz.esi.declaresinistreapplication.FormActivity$AutresDetailsFragment">
+
+
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/nombreTemoins"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="Nombre Témoins"
+        app:isRequired="false"
+        app:dataType="int"
+        app:idEditText="@+id/nombreTemoinsEditText"
+        app:idImageView="@+id/nombreTemoinsImageView"
+        />
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/nombreBlesses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="Nombre Blessés"
+        app:isRequired="false"
+        app:dataType="int"
+        app:idEditText="@+id/nombreBlessesEditText"
+        app:idImageView="@+id/nombreBlessesImageView"
+        />
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/nombreMorts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="Nombre Morts"
+        app:isRequired="false"
+        app:dataType="int"
+        app:idEditText="@+id/nombreMortsEditText"
+        app:idImageView="@+id/nombreMortsImageView"
+        />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dz.esi.declaresinistreapplication.SignInActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connexionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.30"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <dz.esi.declaresinistreapplication.ChampSaisieView
+            android:id="@+id/signInAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:defaultText="Adresse Mail"
+            app:isRequired="true"
+            app:dataType="adresse"
+            app:idEditText="@+id/signInAdressEditText"
+            app:idImageView="@+id/signInAdressImageView"
+            />
+        <dz.esi.declaresinistreapplication.ChampSaisieView
+            android:id="@+id/signInPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:defaultText="Mot de Passe"
+            app:isRequired="true"
+            app:dataType="password"
+            app:idEditText="@+id/signInPwdEditText"
+            app:idImageView="@+id/signInPwdImageView"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <Button
+        android:id="@+id/siignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se Connecter"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:background="#2D80A2"
+        android:layout_gravity="bottom"
+        />
+    </LinearLayout>
+</LinearLayout>

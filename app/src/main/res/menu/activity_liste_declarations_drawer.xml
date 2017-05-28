@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Nouvelle Déclaration">
+        <menu>
+            <item
+                android:id="@+id/sansTiers"
+                android:icon="@drawable/derapage"
+                android:title="Sans Tiers" />
+            <item
+                android:id="@+id/avecTiers"
+                android:icon="@drawable/collision"
+                android:title="Avec Tiers" />
+            <item
+                android:id="@+id/stationnaire"
+                android:icon="@drawable/stationnaire"
+                android:title="Stationnaire" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ouvert"
+            android:icon="@drawable/ouvert"
+            android:title="Dossiers Ouverts" />
+
+        <item
+            android:id="@+id/envoyer"
+            android:icon="@drawable/envoye"
+            android:title="Dossiers Envoyés" />
+        <item
+            android:id="@+id/enTraitement"
+            android:icon="@drawable/en_traitement"
+            android:title="Dossiers en Traitement" />
+        <item
+            android:id="@+id/accepte"
+            android:icon="@drawable/accepte"
+            android:title="Dossiers Acceptés" />
+        <item
+            android:id="@+id/rejete"
+            android:icon="@drawable/rejete"
+            android:title="Dossiers Rejetés" />
+        <item
+            android:id="@+id/all"
+            android:icon="@drawable/all"
+            android:title="Afficher Tout" />
+    </group>
+
+</menu>

@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="dz.esi.declaresinistreapplication.FormActivity$ProprietaireVoitureFragment">
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/nameAdversaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Nom"
+        app:isRequired="true"
+        app:dataType="String"
+        app:idEditText="@+id/nameAdversaireEditText"
+        app:idImageView="@+id/nameAdversaireImageView"
+        />
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/prenomAdversaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Prénom"
+        app:isRequired="true"
+        app:dataType="String"
+        app:idEditText="@+id/prenomAdversaireEditText"
+        app:idImageView="@+id/prenomAdversaireImageView"
+        />
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/contratAdversaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*N° Contrat Assurance"
+        app:isRequired="true"
+        app:dataType="int"
+        app:idEditText="@+id/contratAdversaireEditText"
+        app:idImageView="@+id/contratAdversaireImageView"
+        />
+    <Spinner
+        android:id="@+id/assureurSpinner"
+        android:layout_width="200dp"
+        android:paddingLeft="20dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:entries="@array/assureurs"
+        >
+
+    </Spinner>
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/matriculeAdversaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="Matricule"
+        app:isRequired="false"
+        app:dataType="any"
+        app:idEditText="@+id/matriculeAdversaireEditText"
+        app:idImageView="@+id/matriculeAdversaireImageView"
+        />
+
+
+</LinearLayout>
+
+

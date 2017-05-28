@@ -1,0 +1,98 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="dz.esi.declaresinistreapplication.FormActivity$DetailSinistreFragment">
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/endroitSinistre"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Endroit"
+        app:isRequired="true"
+        app:dataType="String"
+        app:idEditText="@+id/endroitSinistreEditText"
+        app:idImageView="@+id/endroitSinistreImageView"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Date"
+            android:backgroundTint="#AAA"
+            android:textCursorDrawable="@color/colorPrimaryDark"
+            android:editable="false"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textStyle="bold"
+            android:focusable="false"/>
+
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@+id/editTextDate"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="time"
+            android:hint="Heure"
+            android:backgroundTint="#AAA"
+            android:textCursorDrawable="@color/colorPrimaryDark"
+            android:editable="false"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textStyle="bold"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEndroit"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Decription"
+            android:backgroundTint="#AAA"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textStyle="bold"
+            android:textCursorDrawable="@color/colorPrimaryDark"/>
+    </LinearLayout>
+</LinearLayout>
+

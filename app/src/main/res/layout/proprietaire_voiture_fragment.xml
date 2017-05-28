@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="dz.esi.declaresinistreapplication.FormActivity$ProprietaireVoitureFragment">
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/nameProprietaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Nom"
+        app:isRequired="true"
+        app:dataType="String"
+        app:idEditText="@+id/nameProprietaireEditText"
+        app:idImageView="@+id/nameProprietaireImageView"
+        />
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/prenomProprietaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="*Prénom"
+        app:isRequired="true"
+        app:dataType="String"
+        app:isEnabled="false"
+        app:idEditText="@+id/prenomProprietaireEditText"
+        app:idImageView="@+id/prenomProprietaireImageView"
+        />
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/adresseProprietaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="Adresse"
+        app:isRequired="false"
+        app:dataType="any"
+        app:isEnabled="false"
+        app:idEditText="@+id/adresseProprietaireEditText"
+        app:idImageView="@+id/adresseProprietaireImageView"
+        />
+
+    <dz.esi.declaresinistreapplication.ChampSaisieView
+        android:id="@+id/telProprietaire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultText="Tel"
+        app:isRequired="false"
+        app:dataType="int"
+        app:isEnabled="false"
+        app:idEditText="@+id/telProprietaireEditText"
+        app:idImageView="@+id/telProprietaireImageView"
+        />
+
+</LinearLayout>
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChampSaisieView">
+        <attr name="defaultText" format="string"/>
+        <attr name="dataType" format="string"/>
+        <attr name="isRequired" format="boolean"/>
+        <attr name="isEnabled" format="boolean"/>
+        <attr name="idEditText" format="integer"/>
+        <attr name="idImageView" format="integer"/>
+    </declare-styleable>
+</resources>
